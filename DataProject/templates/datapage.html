@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>{{table_title|default("My Table") }}</h1>
+{{Table|safe}}
+<style>
+    table, th, td {
+    border: 1px solid black;
+    }
+</style>
+{% endblock %}
